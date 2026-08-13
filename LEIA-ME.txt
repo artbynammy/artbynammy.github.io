@@ -1,0 +1,14 @@
+PORTFÓLIO NAMMY — COMO PUBLICAR
+
+1. Abra no GitHub o repositório artbynammy.github.io.
+2. Clique em “Add file” e depois em “Upload files”.
+3. Extraia este arquivo ZIP no computador.
+4. Abra a pasta artbynammy.github.io extraída.
+5. Arraste TODOS os itens de dentro dela para a área de upload do GitHub:
+   index.html, style.css, script.js e a pasta images.
+6. No fim da página, clique em “Commit changes”.
+7. Aguarde alguns minutos e acesse https://artbynammy.github.io
+
+Importante: envie o conteúdo da pasta, não o arquivo ZIP fechado.
+
+O texto, os títulos das obras e os contatos ainda poderão ser alterados.
