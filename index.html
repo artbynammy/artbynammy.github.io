@@ -13,6 +13,8 @@
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Nammy, início">NAMMY<span>.</span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
@@ -23,6 +25,9 @@
 
   <main>
     <section class="hero" id="inicio">
+      <div class="orb orb-one" aria-hidden="true"></div>
+      <div class="orb orb-two" aria-hidden="true"></div>
+      <p class="vertical-word" aria-hidden="true">DARK / DESIRE / MEMORY</p>
       <div class="hero-copy reveal">
         <p class="eyebrow">Ilustração · escrita · desejo</p>
         <h1>Entre o belo<br>e o <em>inquietante.</em></h1>
@@ -34,6 +39,8 @@
         <figcaption><span>01</span> Dark Reflection</figcaption>
       </figure>
     </section>
+
+    <div class="manifesto-strip" aria-hidden="true"><div>BEAUTY IN THE SHADOWS <i>✦</i> STORIES THAT BITE <i>✦</i> ARTE PARA O QUE NÃO PERMANECE QUIETO <i>✦</i> BEAUTY IN THE SHADOWS <i>✦</i> STORIES THAT BITE <i>✦</i></div></div>
 
     <section class="gallery-section" id="trabalhos">
       <header class="section-heading reveal"><p class="eyebrow">Obras selecionadas</p><h2>Corpos, personagens<br>e outras assombrações.</h2></header>
@@ -53,16 +60,39 @@
         <figure class="process-card reveal"><img src="images/velora.png" alt="Ilustração finalizada de Velora"><figcaption><span>03</span><b>Atmosfera</b><small>Luz, sombra e presença.</small></figcaption></figure>
       </div>
       <div class="studies reveal"><img src="images/studies.jpg" alt="Folha com estudos de expressões"><img src="images/traditional.jpg" alt="Retrato tradicional em grafite"><p><span class="eyebrow">Estudos tradicionais</span>O papel como lugar de observação: rostos, expressões e pequenos gestos antes de chegarem ao digital.</p></div>
+      <div class="emotion-study reveal">
+        <div class="sketch-window"><img src="images/emotion-study.png" alt="Estudo expressivo de personagem em traço violeta"><span aria-hidden="true">RAW / 04</span></div>
+        <blockquote>“Antes da beleza, existe o impulso. Antes da cor, o corpo já sabe o que quer dizer.”</blockquote>
+      </div>
     </section>
 
     <section class="writing-section" id="escrita">
+      <div class="forest-lines" aria-hidden="true"></div>
       <div class="book-cover reveal"><img src="images/book-cover.png" alt="Capa ilustrada de Seu Lado Mais Escuro"></div>
-      <div class="writing-copy reveal"><p class="eyebrow">Escrita autoral</p><h2>Seu Lado<br><em>Mais Escuro</em></h2><p>Uma história sobre desejo, intimidade e tudo aquilo que emerge quando a luz já não oferece abrigo.</p><p class="status">Em breve: sinopse e trecho selecionado.</p></div>
+      <div class="writing-copy reveal">
+        <p class="eyebrow">Escrita autoral · fantasia sombria · bilíngue</p>
+        <h2>Seu Lado<br><em>Mais Escuro</em></h2>
+        <p>Entre sombras vivas e uma floresta que respira memórias, Nyx desperta em um mundo que reflete tudo o que ela teme — e tudo o que ela ama. Separada de Alma, ela precisa atravessar um território criado a partir de suas próprias dores, traumas e desejos mais profundos.</p>
+        <button class="excerpt-button" type="button" aria-expanded="false" aria-controls="excerpt">Ler um trecho <span>↓</span></button>
+        <div class="excerpt" id="excerpt" hidden>
+          <p>— Eu sou o que você carrega — ela disse, inclinando a cabeça como se tivesse pena de mim. — Eu sempre estive aqui. Você só se recusou a me ver.</p>
+          <p>Eu levantei lentamente, ignorando a ardência das minhas mãos machucadas.</p>
+          <p>— Eu não tenho medo de você.</p>
+          <p>Um sorriso brotou em seus lábios escuros.</p>
+          <p>— Não tem? Pois deveria. Afinal… eu sei toda dúvida que você sussurrou para si mesma no escuro.</p>
+        </div>
+      </div>
     </section>
 
     <section class="about-section" id="sobre">
-      <div class="portrait reveal"><img src="images/nammy.jpg" alt="Retrato da artista Nammy"></div>
-      <div class="about-copy reveal"><p class="eyebrow">Eu sou Nammy</p><h2>Arte para o que<br>vive nas margens.</h2><p>Artista e escritora interessada nas tensões entre intimidade, desejo, identidade e estranheza. Minha produção transita entre a ilustração digital, o desenho e a escrita autoral, explorando o espaço entre o delicado e o inquietante.</p><p>Este portfólio está em construção — como toda identidade viva deve estar.</p></div>
+      <div class="portrait portrait-stack reveal"><img class="portrait-main" src="images/nammy.jpg" alt="Retrato da artista Nammy"><img class="portrait-alt" src="images/nammy-alt.png" alt="Segundo retrato da artista Nammy"><span class="portrait-note">SELF / PORTRAIT<br>VIOLET HOUR</span></div>
+      <div class="about-copy reveal">
+        <div class="identity-mark">
+          <span class="lesbian-flag" role="img" aria-label="Bandeira lésbica"><i></i><i></i><i></i><i></i><i></i></span>
+          <span>Arte lésbica · desejo · identidade</span>
+        </div>
+        <p class="eyebrow">Eu sou Nammy</p><h2>Arte para o que<br>vive nas margens.</h2><p>Artista lésbica e escritora interessada nas tensões entre intimidade, desejo, identidade e estranheza. Minha produção transita entre a ilustração digital, o desenho e a escrita autoral, explorando o espaço entre o delicado e o inquietante.</p><p>Este portfólio está em construção — como toda identidade viva deve estar.</p>
+      </div>
     </section>
   </main>
 
