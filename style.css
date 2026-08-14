@@ -77,11 +77,6 @@
 
 @media(prefers-reduced-motion:reduce){.connector-halo,.silk-halo{animation:none}}
 
-/* Final contact and a softer visual handoff from the needle to the site thread */
-.needle-connector{transform:translateX(-1.2%)}
-.connector-halo{opacity:.76}
-.connector-core{opacity:.88}
+/* Final contact */
 .contact-note a{color:var(--paper);text-decoration:none;text-transform:none;letter-spacing:.04em;border-bottom:1px solid rgba(199,43,78,.55);padding-bottom:.2rem;transition:color .25s ease,border-color .25s ease}
 .contact-note a:hover,.contact-note a:focus-visible{color:#e84064;border-color:#e84064}
-
-@media(max-width:800px){.needle-connector{transform:translateX(-.5%)}}
