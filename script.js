@@ -2,7 +2,7 @@ const menuButton=document.querySelector('.menu-button');const navigation=documen
 
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
-const dialog=document.querySelector('.lightbox');const fullImage=dialog.querySelector('img');const caption=dialog.querySelector('p');document.querySelectorAll('.work').forEach(work=>work.addEventListener('click',()=>{fullImage.src=work.dataset.full;fullImage.alt=work.dataset.title;caption.textContent=work.dataset.title;dialog.showModal()}));dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});
+const dialog=document.querySelector('.lightbox');const fullImage=dialog.querySelector('img');const caption=dialog.querySelector('p');document.querySelectorAll('.work,.challenge-card').forEach(work=>work.addEventListener('click',()=>{fullImage.src=work.dataset.full;fullImage.alt=work.dataset.title;caption.textContent=work.dataset.title;dialog.showModal()}));dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});
 
 const excerptButton=document.querySelector('.excerpt-button');const excerpt=document.querySelector('.excerpt');excerptButton.addEventListener('click',()=>{const opening=excerpt.hidden;excerpt.hidden=!opening;excerptButton.setAttribute('aria-expanded',String(opening));excerptButton.firstChild.textContent=opening?'Fechar trecho ':'Ler um trecho '});
 
