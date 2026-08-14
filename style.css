@@ -76,3 +76,12 @@
 @media(max-width:800px){.needle-stage{height:13rem;margin:1rem 0 0;overflow:visible}.needle-unit{left:50%;right:auto;top:0;width:min(96vw,34rem);height:13rem;transform:translateX(-50%)}.needle-unit .hornet-needle{left:0;top:0;transform:rotate(-3deg)}.needle-connector{height:112%}.continuous-silk{left:-10%;width:120%;top:-2rem;height:calc(100% + 4rem);-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}}
 
 @media(prefers-reduced-motion:reduce){.connector-halo,.silk-halo{animation:none}}
+
+/* Final contact and a softer visual handoff from the needle to the site thread */
+.needle-connector{transform:translateX(-1.2%)}
+.connector-halo{opacity:.76}
+.connector-core{opacity:.88}
+.contact-note a{color:var(--paper);text-decoration:none;text-transform:none;letter-spacing:.04em;border-bottom:1px solid rgba(199,43,78,.55);padding-bottom:.2rem;transition:color .25s ease,border-color .25s ease}
+.contact-note a:hover,.contact-note a:focus-visible{color:#e84064;border-color:#e84064}
+
+@media(max-width:800px){.needle-connector{transform:translateX(-.5%)}}
