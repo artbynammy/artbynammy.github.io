@@ -81,8 +81,7 @@
 .contact-note a{color:var(--paper);text-decoration:none;text-transform:none;letter-spacing:.04em;border-bottom:1px solid rgba(199,43,78,.55);padding-bottom:.2rem;transition:color .25s ease,border-color .25s ease}
 .contact-note a:hover,.contact-note a:focus-visible{color:#e84064;border-color:#e84064}
 
-/* Keep every decorative layer behind the native media controls. */
-.video-weave .video-grid{z-index:5}
-.video-weave .video-frame{z-index:6;pointer-events:auto}
-.video-weave .video-frame video{z-index:2;pointer-events:auto}
+/* Decorative layers must never intercept native media controls. */
+.video-section:after{pointer-events:none!important}
+.video-weave .video-frame,.video-weave .video-frame video{pointer-events:auto}
 .continuous-silk,.continuous-silk *{pointer-events:none!important}
